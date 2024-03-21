@@ -1,0 +1,858 @@
+{
+	"result": {
+		"searchType": 0,
+		"outTrafficCheck": 0,
+		"busCount": 1,
+		"subwayCount": 1,
+		"subwayBusCount": 0,
+		"pointDistance": 19426,
+		"startRadius": 700,
+		"endRadius": 700,
+		"path": [
+			{
+				"pathType": 1,
+				"info": {
+					"trafficDistance": 23300,
+					"totalWalk": 106,
+					"totalTime": 41,
+					"payment": 1700,
+					"busTransitCount": 0,
+					"subwayTransitCount": 1,
+					"mapObj": "7:2:755:736",
+					"firstStartStation": "부천시청",
+					"lastEndStation": "이수",
+					"totalStationCount": 19,
+					"busStationCount": 0,
+					"subwayStationCount": 19,
+					"totalDistance": 23406,
+					"totalWalkTime": -1,
+					"checkIntervalTime": 100,
+					"checkIntervalTimeOverYn": "N"
+				},
+				"subPath": [
+					{
+						"trafficType": 3,
+						"distance": 9,
+						"sectionTime": 1
+					},
+					{
+						"trafficType": 1,
+						"distance": 23300,
+						"sectionTime": 39,
+						"stationCount": 19,
+						"lane": [
+							{
+								"name": "수도권 7호선",
+								"subwayCode": 7,
+								"subwayCityCode": 1000
+							}
+						],
+						"startName": "부천시청",
+						"startX": 126.763609,
+						"startY": 37.504675,
+						"endName": "이수",
+						"endX": 126.982065,
+						"endY": 37.485384,
+						"way": "이수",
+						"wayCode": 1,
+						"door": "null",
+						"startID": 755,
+						"endID": 736,
+						"startExitX": 126.76348006028394,
+						"startExitY": 37.50445199356012,
+						"endExitNo": "12",
+						"endExitX": 126.98195951021282,
+						"endExitY": 37.485893151992336,
+						"passStopList": {
+							"stations": [
+								{
+									"index": 0,
+									"stationID": 755,
+									"stationName": "부천시청",
+									"x": "126.763619",
+									"y": "37.504683"
+								},
+								{
+									"index": 1,
+									"stationID": 754,
+									"stationName": "신중동",
+									"x": "126.775977",
+									"y": "37.503064"
+								},
+								{
+									"index": 2,
+									"stationID": 753,
+									"stationName": "춘의",
+									"x": "126.787075",
+									"y": "37.503734"
+								},
+								{
+									"index": 3,
+									"stationID": 752,
+									"stationName": "부천종합운동장",
+									"x": "126.797516",
+									"y": "37.505459"
+								},
+								{
+									"index": 4,
+									"stationID": 751,
+									"stationName": "까치울",
+									"x": "126.810968",
+									"y": "37.506253"
+								},
+								{
+									"index": 5,
+									"stationID": 750,
+									"stationName": "온수",
+									"x": "126.823465",
+									"y": "37.492059"
+								},
+								{
+									"index": 6,
+									"stationID": 749,
+									"stationName": "천왕",
+									"x": "126.838725",
+									"y": "37.486756"
+								},
+								{
+									"index": 7,
+									"stationID": 748,
+									"stationName": "광명사거리",
+									"x": "126.854892",
+									"y": "37.479286"
+								},
+								{
+									"index": 8,
+									"stationID": 747,
+									"stationName": "철산",
+									"x": "126.868249",
+									"y": "37.476187"
+								},
+								{
+									"index": 9,
+									"stationID": 746,
+									"stationName": "가산디지털단지",
+									"x": "126.882608",
+									"y": "37.480379"
+								},
+								{
+									"index": 10,
+									"stationID": 745,
+									"stationName": "남구로",
+									"x": "126.887286",
+									"y": "37.486104"
+								},
+								{
+									"index": 11,
+									"stationID": 744,
+									"stationName": "대림",
+									"x": "126.89672",
+									"y": "37.492841"
+								},
+								{
+									"index": 12,
+									"stationID": 743,
+									"stationName": "신풍",
+									"x": "126.909632",
+									"y": "37.500137"
+								},
+								{
+									"index": 13,
+									"stationID": 742,
+									"stationName": "보라매",
+									"x": "126.919916",
+									"y": "37.499956"
+								},
+								{
+									"index": 14,
+									"stationID": 741,
+									"stationName": "신대방삼거리",
+									"x": "126.928197",
+									"y": "37.499737"
+								},
+								{
+									"index": 15,
+									"stationID": 740,
+									"stationName": "장승배기",
+									"x": "126.938988",
+									"y": "37.504828"
+								},
+								{
+									"index": 16,
+									"stationID": 739,
+									"stationName": "상도",
+									"x": "126.948216",
+									"y": "37.502552"
+								},
+								{
+									"index": 17,
+									"stationID": 738,
+									"stationName": "숭실대입구",
+									"x": "126.953991",
+									"y": "37.495861"
+								},
+								{
+									"index": 18,
+									"stationID": 737,
+									"stationName": "남성",
+									"x": "126.971052",
+									"y": "37.484749"
+								},
+								{
+									"index": 19,
+									"stationID": 736,
+									"stationName": "이수",
+									"x": "126.982067",
+									"y": "37.485386"
+								}
+							]
+						}
+					},
+					{
+						"trafficType": 3,
+						"distance": 97,
+						"sectionTime": 1
+					}
+				]
+			},
+			{
+				"pathType": 2,
+				"info": {
+					"trafficDistance": 22777,
+					"totalWalk": 335,
+					"totalTime": 81,
+					"payment": 2750,
+					"busTransitCount": 2,
+					"subwayTransitCount": 0,
+					"mapObj": "7038:1:11:24@1729:1:1:30",
+					"firstStartStation": "부천시청역3번출구.경기예고.현대백화점",
+					"lastEndStation": "총신대입구역.남성시장입구앞",
+					"totalStationCount": 42,
+					"busStationCount": 42,
+					"subwayStationCount": 0,
+					"totalDistance": 23112,
+					"totalWalkTime": -1,
+					"checkIntervalTime": 100,
+					"checkIntervalTimeOverYn": "N"
+				},
+				"subPath": [
+					{
+						"trafficType": 3,
+						"distance": 196,
+						"sectionTime": 3
+					},
+					{
+						"trafficType": 2,
+						"distance": 7303,
+						"sectionTime": 26,
+						"stationCount": 13,
+						"lane": [
+							{
+								"busNo": "700",
+								"type": 2,
+								"busID": 7038,
+								"busLocalBlID": "210000039",
+								"busCityCode": 1050,
+								"busProviderCode": 2
+							}
+						],
+						"startName": "부천시청역3번출구.경기예고.현대백화점",
+						"startX": 126.761333,
+						"startY": 37.504804,
+						"endName": "신정현대아파트",
+						"endX": 126.842151,
+						"endY": 37.508732,
+						"startID": 189321,
+						"startStationCityCode": 1050,
+						"startStationProviderCode": 2,
+						"startLocalStationID": "210000166",
+						"startArsID": "11-441",
+						"endID": 101055,
+						"endStationCityCode": 1050,
+						"endStationProviderCode": 2,
+						"endLocalStationID": "114000216",
+						"endArsID": "83-007",
+						"passStopList": {
+							"stations": [
+								{
+									"index": 0,
+									"stationID": 189321,
+									"stationName": "부천시청역3번출구.경기예고.현대백화점",
+									"stationCityCode": 1050,
+									"stationProviderCode": 2,
+									"localStationID": "210000166",
+									"arsID": "11-441",
+									"x": "126.761333",
+									"y": "37.504804",
+									"isNonStop": "N"
+								},
+								{
+									"index": 1,
+									"stationID": 112838,
+									"stationName": "부천시청역1번출구.부천아트센터",
+									"stationCityCode": 1050,
+									"stationProviderCode": 2,
+									"localStationID": "210000165",
+									"arsID": "11-161",
+									"x": "126.766672",
+									"y": "37.504085",
+									"isNonStop": "N"
+								},
+								{
+									"index": 2,
+									"stationID": 80841,
+									"stationName": "계룡리슈빌",
+									"stationCityCode": 1050,
+									"stationProviderCode": 2,
+									"localStationID": "210000218",
+									"arsID": "11-434",
+									"x": "126.769914",
+									"y": "37.50365",
+									"isNonStop": "N"
+								},
+								{
+									"index": 3,
+									"stationID": 111711,
+									"stationName": "신중동역3번출구.롯데백화점",
+									"stationCityCode": 1050,
+									"stationProviderCode": 2,
+									"localStationID": "210000164",
+									"arsID": "11-435",
+									"x": "126.773031",
+									"y": "37.503241",
+									"isNonStop": "N"
+								},
+								{
+									"index": 4,
+									"stationID": 113050,
+									"stationName": "신중동역1번출구.꿈마을.삼환아파트",
+									"stationCityCode": 1050,
+									"stationProviderCode": 2,
+									"localStationID": "210000241",
+									"arsID": "11-255",
+									"x": "126.779151",
+									"y": "37.502431",
+									"isNonStop": "N"
+								},
+								{
+									"index": 5,
+									"stationID": 115240,
+									"stationName": "부천고용복지플러스센터",
+									"stationCityCode": 1050,
+									"stationProviderCode": 2,
+									"localStationID": "210000175",
+									"arsID": "11-469",
+									"x": "126.783454",
+									"y": "37.502826",
+									"isNonStop": "N"
+								},
+								{
+									"index": 6,
+									"stationID": 112097,
+									"stationName": "춘의가구거리",
+									"stationCityCode": 1050,
+									"stationProviderCode": 2,
+									"localStationID": "210000080",
+									"arsID": "11-488",
+									"x": "126.789463",
+									"y": "37.503996",
+									"isNonStop": "N"
+								},
+								{
+									"index": 7,
+									"stationID": 112096,
+									"stationName": "당아래지하차도.산업인력공단",
+									"stationCityCode": 1050,
+									"stationProviderCode": 2,
+									"localStationID": "210000079",
+									"arsID": "11-347",
+									"x": "126.793805",
+									"y": "37.504761",
+									"isNonStop": "N"
+								},
+								{
+									"index": 8,
+									"stationID": 112841,
+									"stationName": "부천종합운동장역1번출구",
+									"stationCityCode": 1050,
+									"stationProviderCode": 2,
+									"localStationID": "210000378",
+									"arsID": "11-373",
+									"x": "126.799704",
+									"y": "37.505758",
+									"isNonStop": "N"
+								},
+								{
+									"index": 9,
+									"stationID": 123308,
+									"stationName": "부천상록학교",
+									"stationCityCode": 1050,
+									"stationProviderCode": 2,
+									"localStationID": "210000377",
+									"arsID": "11-378",
+									"x": "126.804678",
+									"y": "37.506674",
+									"isNonStop": "N"
+								},
+								{
+									"index": 10,
+									"stationID": 112842,
+									"stationName": "까치울역2번출구",
+									"stationCityCode": 1050,
+									"stationProviderCode": 2,
+									"localStationID": "210000382",
+									"arsID": "11-404",
+									"x": "126.810601",
+									"y": "37.506166",
+									"isNonStop": "N"
+								},
+								{
+									"index": 11,
+									"stationID": 112844,
+									"stationName": "궁동사거리",
+									"stationCityCode": 1050,
+									"stationProviderCode": 2,
+									"localStationID": "116000451",
+									"arsID": "17-997",
+									"x": "126.827916",
+									"y": "37.50624",
+									"isNonStop": "N"
+								},
+								{
+									"index": 12,
+									"stationID": 193797,
+									"stationName": "신정숲속마을아파트",
+									"stationCityCode": 1050,
+									"stationProviderCode": 2,
+									"localStationID": "114000217",
+									"arsID": "",
+									"x": "126.83376",
+									"y": "37.506433",
+									"isNonStop": "N"
+								},
+								{
+									"index": 13,
+									"stationID": 101055,
+									"stationName": "신정현대아파트",
+									"stationCityCode": 1050,
+									"stationProviderCode": 2,
+									"localStationID": "114000216",
+									"arsID": "83-007",
+									"x": "126.842151",
+									"y": "37.508732",
+									"isNonStop": "N"
+								}
+							]
+						}
+					},
+					{
+						"trafficType": 3,
+						"distance": 0,
+						"sectionTime": 0
+					},
+					{
+						"trafficType": 2,
+						"distance": 15474,
+						"sectionTime": 50,
+						"stationCount": 29,
+						"lane": [
+							{
+								"busNo": "643",
+								"type": 11,
+								"busID": 1729,
+								"busLocalBlID": "100100096",
+								"busCityCode": 1000,
+								"busProviderCode": 4
+							}
+						],
+						"startName": "신정현대아파트",
+						"startX": 126.842151,
+						"startY": 37.508732,
+						"endName": "총신대입구역.남성시장입구앞",
+						"endX": 126.982331,
+						"endY": 37.487486,
+						"startID": 101055,
+						"startStationCityCode": 1000,
+						"startStationProviderCode": 4,
+						"startLocalStationID": "114000216",
+						"startArsID": "15-320",
+						"endID": 104896,
+						"endStationCityCode": 1000,
+						"endStationProviderCode": 4,
+						"endLocalStationID": "121000532",
+						"endArsID": "22-029",
+						"passStopList": {
+							"stations": [
+								{
+									"index": 0,
+									"stationID": 101055,
+									"stationName": "신정현대아파트",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "114000216",
+									"arsID": "15-320",
+									"x": "126.842151",
+									"y": "37.508732",
+									"isNonStop": "N"
+								},
+								{
+									"index": 1,
+									"stationID": 101079,
+									"stationName": "신정현대아파트.서부트럭터미널",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "114000213",
+									"arsID": "15-317",
+									"x": "126.843016",
+									"y": "37.50838",
+									"isNonStop": "N"
+								},
+								{
+									"index": 2,
+									"stationID": 101161,
+									"stationName": "개봉1동사거리",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "116000145",
+									"arsID": "17-236",
+									"x": "126.846902",
+									"y": "37.500606",
+									"isNonStop": "N"
+								},
+								{
+									"index": 3,
+									"stationID": 88588,
+									"stationName": "개봉고가",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "116000612",
+									"arsID": "17-246",
+									"x": "126.855795",
+									"y": "37.493682",
+									"isNonStop": "N"
+								},
+								{
+									"index": 4,
+									"stationID": 101390,
+									"stationName": "개봉역",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "116000143",
+									"arsID": "17-234",
+									"x": "126.857539",
+									"y": "37.493528",
+									"isNonStop": "N"
+								},
+								{
+									"index": 5,
+									"stationID": 101562,
+									"stationName": "철산리버빌아파트",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "213000118",
+									"arsID": "38-079",
+									"x": "126.867744",
+									"y": "37.492445",
+									"isNonStop": "N"
+								},
+								{
+									"index": 6,
+									"stationID": 206474,
+									"stationName": "구일우성아파트",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "116000147",
+									"arsID": "17-238",
+									"x": "126.876233",
+									"y": "37.488886",
+									"isNonStop": "N"
+								},
+								{
+									"index": 7,
+									"stationID": 206475,
+									"stationName": "가산디지털단지역입구",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "117000129",
+									"arsID": "18-215",
+									"x": "126.886771",
+									"y": "37.481336",
+									"isNonStop": "N"
+								},
+								{
+									"index": 8,
+									"stationID": 96951,
+									"stationName": "디지털단지오거리.가산파출소",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "116000636",
+									"arsID": "18-151",
+									"x": "126.888604",
+									"y": "37.479686",
+									"isNonStop": "N"
+								},
+								{
+									"index": 9,
+									"stationID": 102058,
+									"stationName": "디지털단지오거리",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "117000032",
+									"arsID": "18-118",
+									"x": "126.893369",
+									"y": "37.478586",
+									"isNonStop": "N"
+								},
+								{
+									"index": 10,
+									"stationID": 102185,
+									"stationName": "가산초등학교",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "117000033",
+									"arsID": "18-119",
+									"x": "126.895646",
+									"y": "37.478301",
+									"isNonStop": "N"
+								},
+								{
+									"index": 11,
+									"stationID": 102516,
+									"stationName": "모두의학교.금천문화예술정보학교",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "117000111",
+									"arsID": "18-197",
+									"x": "126.905627",
+									"y": "37.480007",
+									"isNonStop": "N"
+								},
+								{
+									"index": 12,
+									"stationID": 102638,
+									"stationName": "관악구보훈회관.신림푸르지오",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "117000112",
+									"arsID": "18-198",
+									"x": "126.909202",
+									"y": "37.480671",
+									"isNonStop": "N"
+								},
+								{
+									"index": 13,
+									"stationID": 102855,
+									"stationName": "난곡입구",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "120000016",
+									"arsID": "21-115",
+									"x": "126.916126",
+									"y": "37.481924",
+									"isNonStop": "N"
+								},
+								{
+									"index": 14,
+									"stationID": 80002,
+									"stationName": "호림박물관",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "120000445",
+									"arsID": "21-361",
+									"x": "126.91855",
+									"y": "37.482397",
+									"isNonStop": "N"
+								},
+								{
+									"index": 15,
+									"stationID": 103066,
+									"stationName": "남서울중학교.성보중고등학교",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "120000017",
+									"arsID": "21-116",
+									"x": "126.920794",
+									"y": "37.482822",
+									"isNonStop": "N"
+								},
+								{
+									"index": 16,
+									"stationID": 103345,
+									"stationName": "신림사거리.신림역",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "120000018",
+									"arsID": "21-117",
+									"x": "126.928004",
+									"y": "37.483861",
+									"isNonStop": "N"
+								},
+								{
+									"index": 17,
+									"stationID": 150989,
+									"stationName": "관악우체국.양지병원",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "120000160",
+									"arsID": "21-262",
+									"x": "126.933072",
+									"y": "37.484502",
+									"isNonStop": "N"
+								},
+								{
+									"index": 18,
+									"stationID": 103648,
+									"stationName": "KT&G관악지점",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "120000019",
+									"arsID": "21-118",
+									"x": "126.936146",
+									"y": "37.484583",
+									"isNonStop": "N"
+								},
+								{
+									"index": 19,
+									"stationID": 103859,
+									"stationName": "봉천역.관악초등학교",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "120000020",
+									"arsID": "21-119",
+									"x": "126.943215",
+									"y": "37.482061",
+									"isNonStop": "N"
+								},
+								{
+									"index": 20,
+									"stationID": 104019,
+									"stationName": "KT관악지점",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "120000021",
+									"arsID": "21-120",
+									"x": "126.948435",
+									"y": "37.481522",
+									"isNonStop": "N"
+								},
+								{
+									"index": 21,
+									"stationID": 104163,
+									"stationName": "봉천사거리",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "120000022",
+									"arsID": "21-121",
+									"x": "126.954454",
+									"y": "37.48044",
+									"isNonStop": "N"
+								},
+								{
+									"index": 22,
+									"stationID": 104254,
+									"stationName": "낙성대동",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "120000023",
+									"arsID": "21-122",
+									"x": "126.957262",
+									"y": "37.47932",
+									"isNonStop": "N"
+								},
+								{
+									"index": 23,
+									"stationID": 104359,
+									"stationName": "낙성대입구",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "120000024",
+									"arsID": "21-123",
+									"x": "126.960911",
+									"y": "37.477919",
+									"isNonStop": "N"
+								},
+								{
+									"index": 24,
+									"stationID": 104503,
+									"stationName": "인헌중고.서울미술고",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "120000025",
+									"arsID": "21-124",
+									"x": "126.966515",
+									"y": "37.475725",
+									"isNonStop": "N"
+								},
+								{
+									"index": 25,
+									"stationID": 104705,
+									"stationName": "예술인마을.사당초등학교",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "120000026",
+									"arsID": "21-125",
+									"x": "126.973883",
+									"y": "37.475969",
+									"isNonStop": "N"
+								},
+								{
+									"index": 26,
+									"stationID": 104786,
+									"stationName": "남서울농협남현동지점",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "120000027",
+									"arsID": "21-126",
+									"x": "126.977246",
+									"y": "37.47644",
+									"isNonStop": "N"
+								},
+								{
+									"index": 27,
+									"stationID": 104876,
+									"stationName": "사당역",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "121000165",
+									"arsID": "22-241",
+									"x": "126.982032",
+									"y": "37.478635",
+									"isNonStop": "N"
+								},
+								{
+									"index": 28,
+									"stationID": 104884,
+									"stationName": "이수역",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "121000533",
+									"arsID": "22-027",
+									"x": "126.982027",
+									"y": "37.482365",
+									"isNonStop": "N"
+								},
+								{
+									"index": 29,
+									"stationID": 104896,
+									"stationName": "총신대입구역.남성시장입구앞",
+									"stationCityCode": 1000,
+									"stationProviderCode": 4,
+									"localStationID": "121000532",
+									"arsID": "22-029",
+									"x": "126.982331",
+									"y": "37.487486",
+									"isNonStop": "N"
+								}
+							]
+						}
+					},
+					{
+						"trafficType": 3,
+						"distance": 139,
+						"sectionTime": 2
+					}
+				]
+			}
+		]
+	}
+}
