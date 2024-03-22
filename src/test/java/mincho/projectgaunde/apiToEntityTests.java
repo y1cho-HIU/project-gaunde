@@ -3,6 +3,8 @@ package mincho.projectgaunde;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import mincho.projectgaunde.entity.Coordinate;
+import mincho.projectgaunde.entity.GraphPos;
+import mincho.projectgaunde.entity.GraphPosList;
 import mincho.projectgaunde.service.ApiService;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -133,6 +135,7 @@ public class apiToEntityTests {
         }
     }
 
+    // graphPos jsonNode -> return GraphPosList
     @Test
     void graphPosTest(){
         try {
@@ -145,12 +148,43 @@ public class apiToEntityTests {
 
             JsonNode rootNode = objectMapper.readTree(jsonContent);
 
-            //System.out.println("rootNode = " + rootNode.get("result"));
-            Iterator<JsonNode> iterator = rootNode.get("result").get("lane").iterator();
-            while(iterator.hasNext()){
-                System.out.println("iterator = " + iterator.next());
-            }
+            List<GraphPosList> graphPosLists = new ArrayList<>();
 
+            //System.out.println("rootNode = " + rootNode.get("result"));
+            Iterator<JsonNode> laneIter = rootNode.get("result").get("lane").iterator();
+            while(laneIter.hasNext()){
+                JsonNode laneNode = laneIter.next();
+                //System.out.println("iterator = " + laneNode);
+                Integer trafficType = laneNode.get("class").asInt();
+                Integer trafficNumber = laneNode.get("type").asInt();
+                List<GraphPos> GPList = new ArrayList<>();
+
+                Iterator<JsonNode> sectNode = laneNode.get("section").iterator();
+                while(sectNode.hasNext()){
+                    //System.out.println("sectNode.next() = " + sectNode.next());
+
+                    Iterator<JsonNode> GPIter = sectNode.next().iterator();
+                    while(GPIter.hasNext()){
+                        JsonNode gpNext = GPIter.next();
+                        System.out.println("GPIter = " + gpNext);
+                        Iterator<JsonNode> gpNextIter = gpNext.iterator();
+
+                        while(gpNextIter.hasNext()){
+                            JsonNode gpInfoNode = gpNextIter.next();
+                            GPList.add(new GraphPos(gpInfoNode.get("x").asDouble(), gpInfoNode.get("y").asDouble()));
+                        }
+                    }
+                }
+                GraphPosList graphPosList = new GraphPosList(trafficType, trafficNumber, GPList);
+                graphPosLists.add(graphPosList);
+            }
+            for(GraphPosList graphPosList : graphPosLists){
+                System.out.println("graphPosList info: = " + graphPosList.getTrafficNumber() + " " + graphPosList.getTrafficType());
+
+                for(GraphPos graphPos : graphPosList.getGPList()){
+                    System.out.println("-- graphPos = " + graphPos.getX() + " " + graphPos.getY());
+                }
+            }
         } catch (IOException e){
             e.printStackTrace();
         }
