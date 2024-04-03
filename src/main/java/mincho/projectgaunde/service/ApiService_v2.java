@@ -126,16 +126,77 @@ public class ApiService_v2 {
         return new StartPoint(spIndex, mapObj, depInfo, payment, totalTime, subPathList, graphPosList);
     }
 
+    /**
+     *
+     * @param mapObj : "0:0@{INFO OF GRAPH}"
+     * @return : List of graphPos
+     * @throws IOException
+     */
     public List<GraphPos> getGraphPosList(String mapObj) throws IOException {
+        List<GraphPos> graphPosList = new ArrayList<>();
         JsonNode graphNode = getGraphAPI(mapObj);
         JsonNode infoNode = graphNode.get("result");
+        Iterator<JsonNode> laneIter = infoNode.get("lane").iterator();
+
+        while(laneIter.hasNext()){
+            JsonNode laneNode = laneIter.next();
+
+            Iterator<JsonNode> sectIter = laneNode.get("section").iterator();
+            while(sectIter.hasNext()){
+                Iterator<JsonNode> GraphPosIter = sectIter.next().iterator();
+                while(GraphPosIter.hasNext()){
+                    Iterator<JsonNode> GPInfoIter = GraphPosIter.next().iterator();
+                    while(GPInfoIter.hasNext()){
+                        JsonNode GPInfoNode = GPInfoIter.next();
+
+                        graphPosList.add(new GraphPos(GPInfoNode.get("x").asDouble(),
+                                GPInfoNode.get("y").asDouble()));
+                    }
+                }
+            }
+        }
         // result -> lane(list) -> class, type, section(list) -> graphPos(list) -> x, y
-        return null;
+        return graphPosList;
     }
 
+    /**
+     *
+     * @param jsonNode : rootNode.get("subPath")
+     * @return : List<SubPath>
+     */
     public List<SubPath> getSubPathList(JsonNode jsonNode){
+        List<SubPath> subPathList = new ArrayList<>();
+        Iterator<JsonNode> subPathIter = jsonNode.iterator();
+        while(subPathIter.hasNext()){
+            JsonNode subPathNode = subPathIter.next();
+            if(subPathNode.get("trafficType").asInt() == 3) {
+                subPathList.add(new SubPath(subPathNode.get("trafficType").asInt(),
+                        subPathNode.get("distance").asInt()));
+            }
+            else{
+                List<Lane> laneList = new ArrayList<>();
+                List<PassStop> passStopList = new ArrayList<>();
+                Iterator<JsonNode> laneIter = subPathNode.get("lane").iterator();
+                Iterator<JsonNode> passIter = subPathNode.get("passStopList").get("stations").iterator();
 
-        return null;
+                while(laneIter.hasNext()){
+                    JsonNode laneNode = laneIter.next();
+                    laneList.add(new Lane(laneNode.get("subwayCode").asInt(),
+                            laneNode.get("name").toString()));
+                }
+
+                while(passIter.hasNext()){
+                    JsonNode passNode = passIter.next();
+                    passStopList.add(new PassStop(passNode.get("index").asInt(),
+                            passNode.get("stationID").asInt(),
+                            passNode.get("stationName").toString()));
+                }
+                subPathList.add(new SubPath(subPathNode.get("trafficType").asInt(),
+                        subPathNode.get("distance").asInt(),
+                        laneList, passStopList));
+            }
+        }
+        return subPathList;
     }
 
     public Double getScore(List<Double> timeList){

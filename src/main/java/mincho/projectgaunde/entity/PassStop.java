@@ -5,7 +5,7 @@ public class PassStop {
     private Integer stationID;
     private String stationName;
 
-    PassStop(Integer passStopIndex, Integer stationID, String stationName){
+    public PassStop(Integer passStopIndex, Integer stationID, String stationName){
         this.passStopIndex = passStopIndex;
         this.stationID = stationID;
         this.stationName = stationName;

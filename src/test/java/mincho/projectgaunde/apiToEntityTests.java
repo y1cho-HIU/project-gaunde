@@ -6,6 +6,7 @@ import mincho.projectgaunde.entity.Coordinate;
 import mincho.projectgaunde.entity.GraphPos;
 import mincho.projectgaunde.entity.GraphPosList;
 import mincho.projectgaunde.service.ApiService;
+import mincho.projectgaunde.service.ApiService_v2;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.core.io.ClassPathResource;
@@ -20,6 +21,7 @@ import java.util.*;
 public class apiToEntityTests {
 
     ApiService apiService = new ApiService();
+    ApiService_v2 apiService_v2 = new ApiService_v2();
 
     @Test
     void getAPITest() throws IOException {

@@ -15,14 +15,14 @@ public class SubPath {
      * @param laneList : lane information
      * @param passStopList : passStop information
      */
-    SubPath(Integer trafficType, Integer distance, List<Lane> laneList, List<PassStop> passStopList){
+    public SubPath(Integer trafficType, Integer distance, List<Lane> laneList, List<PassStop> passStopList){
         this.trafficType = trafficType;
         this.distance = distance;
         this.laneList = laneList;
         this.passStopList = passStopList;
     }
 
-    SubPath(Integer trafficType, Integer distance){
+    public SubPath(Integer trafficType, Integer distance){
         this.trafficType = trafficType;
         this.distance = distance;
     }

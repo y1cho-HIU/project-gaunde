@@ -5,7 +5,7 @@ public class Lane {
     private String subwayName;
     private String busNo;
 
-    Lane(Integer subwayCode, String subwayName){
+    public Lane(Integer subwayCode, String subwayName){
         this.subwayCode = subwayCode;
         this.subwayName = subwayName;
     }
